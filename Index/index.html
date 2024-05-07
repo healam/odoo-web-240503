@@ -9,39 +9,47 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg bg-primary text-white py-3 mb-4 border-bottom">
+   
+    <style>
+        .navbar-nav .nav-link {
+            color: white !important;
+        }
+    </style>
+
+    <nav class="navbar navbar-expand-lg bg-primary text-white  border-bottom">
         <div class="container">
-         <a class="navbar-brand" href="#">
-            <img src="../assets/odoo-white.svg" alt="" width="68" height="22">
-                </a>
+            <a class="navbar-brand" href="#">
+                <img src="../assets/odoo-white.svg" alt="" width="68" height="22">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-             <span class="navbar-toggler-icon"></span>
-             </button>
-                 <div class="collapse navbar-collapse" id="navbarText">
-                      <ul class="navbar-nav justify-content-center me-auto mb-2 mb-lg-0 ">
-                        <li class="nav-item">
-                         <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                         <a class="nav-link" href="#">Products</a>
-                        </li>
-                        <li class="nav-item">
-                         <a class="nav-link" href="#">Pages</a>
-                        </li>
-                        <li class="nav-item">
-                         <a class="nav-link" href="#">App</a>
-                        </li>  
-                        <li class="nav-item">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav justify-content-center me-auto mb-2 mb-lg-0" style="margin-right: 0!important; width: 100%; gap: 1rem;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">App</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#">Docs</a>
-                        </li>       
-                        </ul> 
-                        
-                        <div class="col-md-3 text-end">
-                            <button type="button" class="btn">Sign in</button>
-                            <button type="button" class="btn btn-light">Buy Now</button>
-                          </div>             
-             </div>
-     </nav>
+                    </li>
+                </ul>
+    
+                <div class="col-md-3 text-end">
+                    <button type="button" class="btn">Sign in</button>
+                    <button type="button" class="btn btn-light">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </nav>
 
     <div class="jumbotron jumbotron-fluid bg-primary">
         <div class="container px-4"> 
@@ -51,9 +59,7 @@
                     <p class="lead">Build a beautiful, modern website with flexible components built from scratch.</p>
                     <button type="button" class="btn btn-light btn-lg">Get started </button>  
                  </div>
-
-              
-            
+       
             <div class="col-lg-6 p-5">
                     <div class="card p-3" style="width: 30rem;">
                       <ul class="list-group list-group-flush">
@@ -104,11 +110,7 @@
                                           </div>
                                     </li>
                                   </ul>
-
-
-
-                            </div>
-                          
+                            </div>                          
                           </div>
                         <a href="#" class="list-group-item list-group-item-action">
                             <div class="d-flex w-100 justify-content-between">
@@ -124,7 +126,6 @@
                             </div>
                             <p class="mb-1">Pending - Lisbon, Portugal</p>
                           </a>
-
                     </ul>
                     <div class="card-body">
                       <a href="#" class="card-link">View all</a>
@@ -240,14 +241,22 @@
 
 </section>
 
+<style>
+    .custom-container {
+        padding: 20px;
+    }
 
+    #Infinite-solutions {
+        background-color: #151348;
+        color: #f8f9fa;
+        border: 0;
+        border-radius: 4em 0;
+    }
+</style>
 
-
-
-
-
-    <section id="Infinite solutions">
-        <div class="container p-5  bg-primary rounded text-white">
+<div class="custom-container">
+    <section id="Infinite-solutions">
+        <div class="container p-5 rounded text-white">
             <div class="row">
                 <div class="col-md-8">
                     <h2>Infinite solutions</h2>
@@ -256,42 +265,27 @@
                 </div>
                 <div class="col-md-4">
                     <div class="d-flex justify-content-around">
-                        <button class="btn btn-light btn-sm" type="button">Learn more</button>  
+                        <button class="btn btn-light btn-sm" type="button">Learn more</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-  
+</div>
 
-
-
-    
-    
-          
-
-
-
-
-
-
-
-
-
-
-<section id="Review" class="pt-mt-5">
+<section id="Review" class="pt-mt-5 bg-light">
     <div class="container">
         <div class="row">
             <div class="col p-5">
                 <span class="badge rounded-pill text-bg-primary">Awards</span>
                 
-                <p class="fw-bolder text-secondary">Awards for design, creativity, and innovation on the Internet.</p>
+                <p class="fw-bolder text-secondary my-3">Awards for design, creativity, and innovation on the Internet.</p>
             </div>
         </div>
 
-        <row class="row gy-4">
+        <row class="row gy-4 p-3">
             <div class="col-lg-2">
-                <div class="card h-100 shadow p-3 mb-5 bg-white rounded" style="width: auto; ">
+                <div class="custom-card h-100 shadow p-3 mb-5 bg-white rounded" style="width: auto; ">
                     <img src="../assets/airbnb.svg" class="card-img-top mx-auto d-block" alt="airbnb" width="70" height="auto">
                     <div class="card-body text-center">
                       <h5 class="card-title">4.95 out of 5 stars</h5>
@@ -301,8 +295,8 @@
             </div>
                   
             <div class="col-lg-2">
-                <div class="card h-100 shadow p-3 mb-5 bg-white rounded" style="width: auto;">
-                    <img src="../assets/amazon.svg" class="h-50" alt="amazon">
+                <div class="custom-card h-100 shadow p-3 mb-5 bg-white rounded" style="width: auto;">
+                    <img src="../assets/amazon.svg" class="card-img-top h-50" alt="amazon">
                     <div class="card-body text-center">
                       <p class="card-text">They build modern-looking websites easily using Tabs.</p>
                       <button type="button" class="btn btn-link">Learn more</button>
@@ -311,7 +305,7 @@
             </div>
 
             <div class="col-lg-2">
-                <div class="card h-100 shadow p-3 mb-5 bg-white rounded" style="width: auto;">
+                <div class="custom-card h-100 shadow p-3 mb-5 bg-white rounded" style="width: auto;">
                     <img src="../assets/slack.svg" class="card-img-top" alt="slack">
                     <div class="card-body text-center">
                       <p class="card-text">They build modern-looking websites easily using Tabs.</p>
@@ -321,7 +315,7 @@
             </div>
 
             <div class="col-lg-2">
-                <div class="card h-100 shadow p-3 mb-5 bg-white rounded" style="width: auto;">
+                <div class="custom-card h-100 shadow p-3 mb-5 bg-white rounded" style="width: auto;">
                     <img src="../assets/spotify.svg" class="card-img-top" alt="spotify">
                     <div class="card-body text-center">
                       <h5 class="card-title">4.95 out of 5 stars</h5>
@@ -331,7 +325,7 @@
             </div>
 
             <div class="col-lg-2">
-                <div class="card h-100 shadow p-3 mb-5 bg-white rounded" style="width: auto;">
+                <div class="custom-card h-100 shadow p-3 mb-5 bg-white rounded" style="width: auto;">
                     <img src="../assets/paypal.svg" class="card-img-top" alt="paypal">
                     <div class="card-body text-center">
                         <p class="card-text">They build modern-looking websites easily using Tabs.</p>
@@ -340,20 +334,10 @@
                     </div>
                   </div>
             </div>
-
-
-            </div>
- 
-
-
-
-
-
-        </row>
-
-    </div>
+        </div>
+    </row>
+</div>
 </section>
-
 
 <section>
     <div class="container">
@@ -362,13 +346,10 @@
                 <h1 class="text-center"> Helpful answers</h1>
                 <p class="lead text-center text-dark p-3">Start building fast, beautiful, and modern-looking websites in no time.</p>  
             </div>
-
         </div>
-
     </div>
 
 </section>
- 
       <div class="container">
         <div class="row">
             <div class="col-md-6">
@@ -442,25 +423,19 @@
         </div>
       </div>
 
-
       <section>
         <div class="container">
-            <div class="row justify-content-center">
+            <div class="row p-3 justify-content-center">
                 <div class="col-md-8">
                 <h3 class="text-center my-3">I want to start a new project.</h3>
-                <button type="button" class="btn btn-primary my-3">Buy now</button>
-                <button type="button" class="btn btn-dark my-3">Learn more</button>
+                <button type="button" class="btn btn-primary">Buy now</button>
+                <button type="button" class="btn btn-dark">Learn more</button>
 
                 </div>
             </div>
         </div>
       </section>
-     
-
-
- 
-      
-  
+       
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-1Y6m1pW6moT+6OQDvN9rZ3vQdFzNrfpN2ZQVTqCTpF8+5JXbHsP5cGdYdCwV8O+L" crossorigin="anonymous"></script>
 </body>

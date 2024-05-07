@@ -64,9 +64,18 @@ body {
 
 h1
 {
-  
   margin: 30px 0 !important;
 }
+
+.custom-card {
+  transition:all 0.3s
+  }
+  
+  .custom-card:hover {
+  transform: scale(1.15);
+  }
+
+
 
 .rating {
     display: inline-block;
